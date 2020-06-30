@@ -6,6 +6,8 @@ function drawfunction(){
   const contents = firstarea.value;
   const contents2 = contents.split(" ");
   console.log(contents2);
-  const element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-  thesvg.appendChild(element);
+  const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+  polygon.setAttribute("id", "polygon1");
+  polygon.setAttribute("stroke", "black");
+  thesvg.appendChild(polygon);
 }
