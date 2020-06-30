@@ -1,6 +1,6 @@
 window.addEventListener("keyup", drawfunction);
 function drawfunction(){
-  if (document.getElementById("polygon") != null){document.getElementById("polygon").remove()};
+  if (document.getElementById("polygon1") != null){document.getElementById("polygon1").remove()};
   const thesvg = document.getElementById("thesvg");
   const firstarea = document.getElementById("firstarea");
   const contents = firstarea.value;
