@@ -7,5 +7,5 @@ function drawfunction(){
   const contents2 = contents.split(" ");
   console.log(contents2);
   const element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-  svg.appendChild(element);
+  thesvg.appendChild(element);
 }
