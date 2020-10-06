@@ -12,9 +12,9 @@ function drawfunction(){
     polygon.setAttribute("id", "polygon1");
     polygon.setAttribute("stroke", "black");
     for (const location of contents2) {
-      const point = thesvg.createSVGPoint();
-      point.x = location.split(",")[0]+180;
-      point.y = location.split(",")[1]+180;
+      const point = thesvg.createSVGPoint()+300;
+      point.x = location.split(",")[0];
+      point.y = location.split(",")[1];
       polygon.points.appendItem(point);
     }
     thesvg.appendChild(polygon);
