@@ -4,7 +4,8 @@ function drawfunction(){
   const thesvg = document.getElementById("thesvg");
   const firstarea = document.getElementById("firstarea");
   const contents = firstarea.value;
-  const contents2 = contents.split(" ");
+  const contents1 = contents.split("<coordinates>")[1]
+  const contents2 = contents.split("0");
   console.log(contents2);
   const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
   polygon.setAttribute("id", "polygon1");
