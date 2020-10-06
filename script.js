@@ -5,7 +5,7 @@ function drawfunction(){
   const firstarea = document.getElementById("firstarea");
   const contents = firstarea.value;
   if (contents.split("<coordinates>")[1] != null){
-    const contents1 = contents.split("<coordinates>")[1];
+    const contents1 = contents.split("<coordinates>")[1].split("</coordinates>")[0];
     const contents2 = contents1.split(",0 ");
     console.log(contents2);
     const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
