@@ -20,7 +20,7 @@ function drawfunction(){
     thesvg.appendChild(polygon);
   }
   else{
-    const contents2 = contents1.split(" ");
+    const contents2 = contents.split(" ");
     console.log(contents2);
     const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
     polygon.setAttribute("id", "polygon1");
