@@ -11,7 +11,7 @@ function drawfunction(){
     const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
     polygon.setAttribute("id", "polygon1");
     polygon.setAttribute("stroke", "black");
-    for (const location of contents2) {
+    for (let location of contents2) {
       const point = thesvg.createSVGPoint();
       point.x = location.split(",")[0]+300;
       point.y = location.split(",")[1]+300;
@@ -25,7 +25,7 @@ function drawfunction(){
     const polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
     polygon.setAttribute("id", "polygon1");
     polygon.setAttribute("stroke", "black");
-    for (const location of contents2) {
+    for (let location of contents2) {
       const point = thesvg.createSVGPoint();
       point.x = location.split(",")[0];
       point.y = location.split(",")[1];
